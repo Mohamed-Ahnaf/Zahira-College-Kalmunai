@@ -166,3 +166,108 @@ padding: 5px;
 }
 
 
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.zck-welcome {
+    animation: fadeUp 1.3s ease-in-out; 
+}
+
+
+
+
+
+
+
+.highlight-zck{
+    height: 500px;
+    background-color: #ffffcc6e; 
+  
+
+}
+
+
+.high-title{
+    display: flex;
+    
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.high-title h2 {
+    font-size: 50px;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    letter-spacing: 2px;
+    margin-left: 50px;
+    
+    background: linear-gradient(90deg, #3A6839, #064E3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.hdline{
+    height: 8px;
+    width: 800px;
+    background-color: #064e3b9f;
+    margin-left: 5px;
+    margin-top: 65px;
+    border-radius: 150px;
+}
+
+@keyframes fadeUUp {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+.high-title {
+    animation: fadeUUp 1.3s ease-in-out; 
+}
+
+
+@media (max-width: 800px) {
+    .highlight-zck {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .high-title {
+        flex-direction: column; 
+        align-items: center; 
+        margin-left: 0; 
+    }
+
+    .high-title h2 {
+        font-size: 30px; 
+        letter-spacing: 1px; 
+        margin-left: 0; 
+    }
+
+    .hdline {
+        width: 100%; 
+        margin-left: 0; 
+        height: 5px;
+        margin-top: -20px; 
+    }
+}
+
+
