@@ -1,135 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Fredoka", sans-serif;
-}
-
 body{
-    margin-top: 50px;
-}
-/*NAVBAR DESIGNING CODE----------------------------------------*/
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: rgba(255, 255, 0, 0.555);
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo{
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-}
-
-.header button{
-    width: 50px;
-    flex-shrink: 0;
-    font-size: 30px;
-    background: none;
-    border: none;
-    outline: none;
-    color: darkgreen;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.bar{
-    width: 100%;
-    height: 3px;
-    background-color: darkgreen;
-    border-radius: 10px;
-    
+    margin: 0px;
+    padding: 0px;
 }
 
 
-.links{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-height: 100vh;
-width: 250px;
-background-color: white;
-
-}
-
-
-.link{
+/*---------------------MAIN NAV BAR DESIGN CODE CSS--------------*/
+nav{
+    background: linear-gradient(90deg, #3A6839, #064E3B);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 12px 15px;
-    font-weight: 500;
+    justify-content: space-around;
+}
+
+nav a {
     text-decoration: none;
-    font-size: 14px;
-    color: darkgreen;
+    color: #FFFFCC;
 }
 
-.link.active,
-.link:hover
-{
-    background-color: #eee;
-    color: yellowgreen;
+nav a:hover {
+    color: #FFCC00;
 }
 
-.links{
-    transform:translateX(-250px);
+nav li{
+display: inline-block;
+margin: 0px,8px;
+margin-left: 20px;
+padding: 5px;
 }
 
-.content{
-    padding: 10px;
-
+.zck-logo{
+    color: #FFCC00;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.open .links{
-    transform: translateX(0px);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+.zck-logo:hover{
+    color: goldenrod;
+ 
+}
+/*---------------------HUMBURGERMENU DESIGN CODE CSS--------------*/
 
+.menu-line{
+    height:3px;
+    width: 20px;
+    background-color: white;
+    margin-bottom: 3px;
 }
 
-.nav-overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.2);
-    backdrop-filter: blur(2px);
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+.hummenu{
+    display: none;
+    cursor: pointer;
 }
 
-.open .nav-overlay{
-    visibility: visible;
-    opacity: 1;
-}
+/*---------------------DEVICE 900PX DESIGN CODE CSS--------------*/
+@media (max-width:900px){
 
-@media(max-width:800px){
-    .header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        width: 100%;
-        height: 50px;
-        background-color: rgba(255, 255, 0, 0.555);
-        justify-content: space-between;
-        align-items: center;
-        padding: 50px;
+    nav{
+        flex-direction: column;
     }
-}
 
+    nav li{
+        display: block;
+        padding: 10px;
+        
+    }
+
+    ul{
+        text-align: center;
+        padding: 0px;
+        display: none;
+    }
+    .zck-logo{
+        font-size: large;
+        text-align: center;
+        align-self: flex-start;
+        margin-left: 15px;
+        font-size: medium;
+       
+    }
+
+    .hummenu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+
+    }
+
+    .showmenu{
+        display: block;
+    }
+
+}
+/*---------------------DEVICE 375 DESIGN CODE CSS--------------*/
+@media(max-width:375px){
+   .zck-logo{
+        text-align: left;
+   }
+
+   .hummenu{
+    margin-bottom: 30px;
+
+}
+}

@@ -1,15 +1,6 @@
-document.addEventListener('DOMContentLoaded', ()=>{
-    const sidenav = document.querySelector('.side-nav');
-    const btnnav = document.querySelector('#btnnav');
-    const overlayscreen = document.querySelector('.nav-overlay');
+const hummenu = document.querySelector('.hummenu');
+const ulist = document.querySelector('nav ul');
 
-    btnnav.addEventListener('click',()=>{
-sidenav.classList.add('open');
-
-
-    });
-
-    overlayscreen.addEventListener('click',()=>{
-sidenav.classList.remove('open');
-    });
-});
+hummenu.addEventListener('click',()=>{
+    ulist.classList.toggle('showmenu');
+})
