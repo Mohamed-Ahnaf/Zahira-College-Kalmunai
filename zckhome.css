@@ -212,7 +212,7 @@ padding: 5px;
     letter-spacing: 2px;
     margin-left: 50px;
     
-    background: linear-gradient(90deg, #3A6839, #064E3B);
+    background: linear-gradient(90deg, #000000, #C0C0C0); /* Black to Silver */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -222,7 +222,7 @@ padding: 5px;
 .hdline{
     height: 8px;
     width: 800px;
-    background-color: #064e3b9f;
+    background-color: rgba(0, 0, 0, 0.459);
     margin-left: 5px;
     margin-top: 65px;
     border-radius: 150px;
